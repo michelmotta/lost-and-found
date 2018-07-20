@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showin="navigation_view">
+    <item
+        android:id="@+id/sideMenuHome"
+        android:icon="@drawable/dashboard_icon"
+        android:title="Início" />
+    <item android:title="Gerenciar Objetos">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sideMenuMyObjects"
+                    android:icon="@drawable/box_icon"
+                    android:title="Meus Objetos" />
+                <item
+                    android:id="@+id/sideMenuRegisterObjects"
+                    android:icon="@drawable/box_plus_icon"
+                    android:title="Cadastrar Objeto" />
+                <item
+                    android:id="@+id/sideMenuCommentsReceived"
+                    android:icon="@drawable/comment_icon"
+                    android:title="Comentários Recebidos" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Ações de Usuário">
+        <menu>
+            <item
+                android:id="@+id/sideMenuUser"
+                android:icon="@drawable/user_icon"
+                android:title="Conta" />
+            <item
+                android:id="@+id/sideMenuLogout"
+                android:icon="@drawable/close_icon"
+                android:title="Sair" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".view.UserRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/loginLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:src="@drawable/logo"
+                    android:tint="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/userRegister_pageTitle"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="36sp" />
+
+                <EditText
+                    android:id="@+id/registerUsernameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/ubuntu"
+                    android:inputType="text"
+                    android:hint="@string/userRegister_txtUserName"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/registerEmailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/ubuntu"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/userRegister_txtEmail"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/registerPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/ubuntu"
+                    android:hint="@string/userRegister_txtPassword"
+                    android:inputType="textPassword"
+                    android:padding="15dp" />
+
+                <Button
+                    android:id="@+id/registerBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/roundedbutton"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/userRegister_btnSave"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/registerBackLoginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/userRegister_btnBackLogin"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/userRegisterProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:indeterminateTint="#FFFFFF"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

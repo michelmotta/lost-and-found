@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".view.ObjectCommentsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/objectCommentsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_margin="8dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/objectCommentsToolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:id="@+id/objectCommentsRecyclerView"
+        android:fillViewport="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/objectCommentsId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/objectCommentsUserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/objectCommentsCommentSend"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/ubuntu"
+                android:padding="12dp"
+                android:inputType="text"
+                android:layout_marginRight="5dp"
+                android:hint="Mensagem"/>
+
+            <Button
+                android:id="@+id/objectCommentsSendBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:fontFamily="@font/ubuntu"
+                android:textColor="@color/white"
+                android:text="Enviar"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/commentsProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:indeterminateTint="#FFFFFF"
+        android:visibility="gone"/>
+
+</RelativeLayout>

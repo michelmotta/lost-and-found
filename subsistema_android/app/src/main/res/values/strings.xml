@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Lost and Found</string>
+    <string name="open">Aberto</string>
+    <string name="close">Fechado</string>
+
+    <!-- Login Screen -->
+    <string name="login_txtEmail">E-mail</string>
+    <string name="login_txtPassword">Senha</string>
+    <string name="login_btnLogin">Login</string>
+    <string name="login_btnRegister">Ainda não possui conta?</string>
+
+    <!-- Register Object Screen -->
+    <string name="objectRegister_pageTitle">Cadastrar Objeto</string>
+    <string name="objectRegister_txtTitle.">Título</string>
+    <string name="objectRegister_txtDateOccurred">Data do Ocorrido</string>
+    <string-array name="objectSituation">
+        <item>Não resolvido</item>
+        <item>Resolvido</item>
+    </string-array>
+    <string-array name="objectClassification">
+        <item>Encontrado</item>
+        <item>Perdido</item>
+    </string-array>
+    <string name="objectRegister_btnSelectImage">Selecionar Imagem</string>
+    <string name="objectRegister_txtDescription">Descrição do Ocorrido</string>
+    <string name="objectRegister_btnSave">Salvar</string>
+
+    <!-- Register User Screen -->
+    <string name="userRegister_pageTitle">Registrar</string>
+    <string name="userRegister_txtUserName">Nome de usuário</string>
+    <string name="userRegister_txtEmail">E-mail</string>
+    <string name="userRegister_txtPassword">Senha</string>
+    <string name="userRegister_btnSave">Salvar</string>
+    <string name="userRegister_btnBackLogin">Voltar ao login</string>
+
+    <!-- User Screen -->
+    <string name="user_pageTitle">Editar Usuário</string>
+    <string name="user_txtUserName">Nome de usuário</string>
+    <string name="user_txtEmail">E-mail</string>
+    <string name="user_txtPassword">Senha</string>
+    <string name="user_btnSave">Salvar</string>
+
+</resources>
